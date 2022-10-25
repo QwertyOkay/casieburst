@@ -13,8 +13,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" media="all" href="./css/main.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,29 +23,40 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+  <style>
+    .itcss__items {
+      counter-reset: slide;
+    }
 
+    .itcss__item {
+      counter-increment: slide;
+    }
+
+    
+  </style>
+
+<script defer src="js/slider.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    new ItcSimpleSlider('.itcss', {
+      loop: true,
+      autoplay: true,
+      swipe: true
+    });
+  });
+</script>
 
 </head>
 
+
+
 <body>
     <main>
-      
-      <div class="main__promo" style="z-index: 6;">
-        <a href="shop.html">
-          <p style="color: #fff;font-size: 14px;">We ship worldwide! <a href="#shop"><span style="color: #e22c5f !important;
-            text-decoration: underline;
-            font-size: 12px;
-            padding-left: 5px;font-weight: 600;
-    text-shadow: #efe4ba 1px 0 10px;">Visit the store</span></a></p>
-        </a>
-      </div>
-        <nav>
-          <header class="header"
-          style="position: fixed;
-          z-index: 2;
-          background: rgb(243 243 245);
-          width: 100%;top: 5%;">
-            <div class="header__content">
+    <nav>
+    <header class="header">
+    <div class="header__content">
     <div>
 <a href="/" style="display: flex;
 align-items: center;
@@ -80,242 +91,129 @@ justify-content: center;">
     flex-wrap: wrap;">
 
       <div>
- <h1 class="hero__title">Buy Urban Art</h1>
+ <h1 class="hero__title">Decorate your home</h1>
       <h2 style="left: 10%;
     position: absolute;
-    top: 77%;font-size: 20px;
-    line-height: 30px; font-weight: 100!important;background-color: rgba(0, 0, 0, 0.35);">MegaBlazex Store</h2>
+    top: 77%;font-size: 30px;
+    line-height: 30px; font-weight: 100!important;background-color: rgba(0, 0, 0, 0.35);">with plants</h2>
       <a href="#shop">
       </div>
       </a>
     </div>
   </section>
 
-  <section id="shop" class="wrapper__items"
-  style="padding: 130px 0 0; display: block;">
-  <div class="container" style="position: relative;
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1470px;display: block;">
-    <h1 class="wrapper__title">STORE</h1>
-    <ul class="wrapper__list-item">
-
-
-    <li class="wrapper__items">
-
-      <a href="1.html" >
-
-      <div class="wrapper__items-img content">
-      <img src="img/1.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-      <h1>Banksy – Choose Your Weapon (Dark purple) <br> €9,000</h1></noindex>
-      </div>
-    </div>
-    <a href="1.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-    <li class="wrapper__items">
-      <a href="2.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/2.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-      <h1>Invader – Alert (Black) <br> €9,950.00</h1></noindex>
-      </div>
-    </div>
-    <a href="2.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="3.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/3.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-      <h1>Hunto – Surprise Encounter 1/1 <br> €2,250.00</h1></noindex>
-      </div>
-    </div>
-    <a href="3.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="4.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/4.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-      <h1>Invader – Alert (Grey) <br> €9,950.00</h1></noindex>
-      </div>
-    </div>
-    <a href="4.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="5.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/5.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-      <h1>KAWS – Holiday Hong Kong Limited 20” Plush Black <br> €550.00</h1></noindex>
-      </div>
-    </div>
-    <a href="5.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="6.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/6.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-          <h1>Banksy – TimeOut Poster London <br> €1,500.00</h1></noindex>      </div>
-    </div>
-    <a href="6.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="7.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/7.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-          <h1>Banksy – Forgive Us Our Trespasses <br> €1,500.00</h1></noindex>  
-              </div>
-    </div>
-    <a href="7.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-    
-    <li class="wrapper__items">
-      <a href="8.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/8.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide"> 
-        <noindex>
-          <h1>Invader – Sunset (Gold & Blue) <br> €1,300.00</h1></noindex>  
-      </div>
-    </div>
-    <a href="8.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="9.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/9.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-          <h1>Joachim – The bathroom scene<br> €2,200.00</h1></noindex>        </div>
-    </div>
-    <a href="9.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="10.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/10.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-          <h1>Banksy – Di-Faced Tenner <br> €1,500.00</h1></noindex>        </div>
-    </div>
-    <a href="10.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="11.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/11.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-          <h1>Banksy – Bomb Hugger (Signed) Print <br> €1,600.00</h1></noindex>        </div>
-    </div>
-    <a href="11.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    <li class="wrapper__items">
-      <a href="12.html" >
-      <div class="wrapper__items-img content">
-      <img src="img/12.jpg" alt="Items" class="wrapper__img">
-      <div class="h1__hidden hide">
-        <noindex>
-          <h1>STIK – Walk <br> €1,000.00</h1></noindex>        </div>
-    </div>
-    <a href="12.html" class="wrapper__buttons-sec">
-      <p class="wrapper__items-desc">ORDER</p>
-    </a>
-      </a>
-    </li>
-
-
-    </ul>
-  </div>
+  <section>
+    <h1 class="wrapper__title">Bestsellers</h1>
   </section>
 
-  <section style="padding: 0px 120px 120px 120px;">
+
+
+  <section style="background-color: #f2f3f4;">
+  <div class="itcss">
+    <div class="itcss__wrapper">
+      <div class="itcss__items">
+  
+        <div class="itcss__item">
+        <div class="slider__wrap">
+        <a href="I/1.html" style="display: block;">
+        <img src="img/I/1.webp" alt="Slider1" class="slider__img"></a>
+        </div> 
+        <div class="slider__name">Lizzie</div>
+        </div>
+
+        <div class="itcss__item">
+          <div class="slider__wrap">
+          <a href="I/2.html" style="display: block;">
+          <img src="img/I/s2.webp" alt="Slider2" class="slider__img"></a>
+          </div> 
+          <div class="slider__name">Susie</div>
+          </div>
+
+          <div class="itcss__item">
+            <div class="slider__wrap">
+            <a href="I/3.html" style="display: block;">
+            <img src="img/I/s3.webp" alt="Slider3" class="slider__img"></a>
+            </div> 
+            <div class="slider__name">Big Ken</div>
+            </div>
+
+            <div class="itcss__item">
+              <div class="slider__wrap">
+              <a href="I/4.html" style="display: block;">
+              <img src="img/I/s4.webp" alt="Slider4" class="slider__img"></a>
+              </div> 
+              <div class="slider__name">Pippa</div>
+              </div>
+
+
+              <div class="itcss__item">
+                <div class="slider__wrap">
+                <a href="O/1.html" style="display: block;">
+                <img src="img/O/s1.webp" alt="Slider5" class="slider__img"></a>
+                </div> 
+                <div class="slider__name">Ivy</div>
+                </div>
+
+                <div class="itcss__item">
+                  <div class="slider__wrap">
+                  <a href="O/2.html" style="display: block;">
+                  <img src="img/O/s2.webp" alt="Slider6" class="slider__img"></a>
+                  </div> 
+                  <div class="slider__name">Mae</div>
+                  </div>
+
+                  <div class="itcss__item">
+                    <div class="slider__wrap">
+                    <a href="O/3.html" style="display: block;">
+                    <img src="img/O/s3.webp" alt="Slider7" class="slider__img"></a>
+                    </div> 
+                    <div class="slider__name">Vivi</div>
+                    </div>
+
+
+                    <div class="itcss__item">
+                      <div class="slider__wrap">
+                      <a href="O/4.html" style="display: block;">
+                      <img src="img/O/s4.webp" alt="Slider8" class="slider__img"></a>
+                      </div> 
+                      <div class="slider__name">Leon</div>
+                      </div>
+
+      </div>
+    </div>
+    <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+    <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+  </div>
+</section>
+  
+
+  <section class="but__sec">
     <div style="display: flex;
     justify-content: center;
     align-items: center;">
       <ul style="display: flex;
     list-style: none;
     justify-content: center;flex-direction:inherit;">
-        <li class="mr20"><a href="shop.html"><button class="button__section" style="text-transform: uppercase;
-          font-weight: 700;
-          color: #fff;
-          padding: 10px 20px;
-          border: 2px solid #e22c5f;
-          background-color: #e22c5f;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
-          display: inline-block;
-          font-size: 1em;
-          letter-spacing: 1px;
-          text-shadow: none;
-          ">More</button></a></li>
+        <li class="mr20">
+          <a href="Indoor.html">
+          <button class="button__section">Indoor</button></a></li>
+
+          <li class="mr20">
+            <a href="Outdoor.html">
+            <button class="button__section">Outdoor</button></a></li>
       </ul>
     </div>
+  </section>
+
+  <section style="    background: #fcfcfc; padding: 20px;">
+    <h1 class="wrapper__title" style="text-transform: none; ">Have any questions?</h1>
+    <form action="" style="display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;">
+      <input type="email" placeholder="Enter your email" class="but__q">
+      <button type="submit" class="but__q">Submit</button>
+    </form>
   </section>
 
   <footer style="padding: 20px;    background-color: #f3f3f542;">
@@ -328,34 +226,10 @@ justify-content: center;">
       </ul>
     </div>
     <div>
-      <a href="/"><p> ALL RIGHTS RESERVED © MEGABLAZEX.com </p></a>
+      <a href="/"><p> ALL RIGHTS RESERVED © CASIEBURST.com </p></a>
     </div>
   </footer>
   </main>
-
-  <script>
-    let prevScrollPosition = window.pageYOffset;
-
-    window.onscroll = function () {
-
-      let currentScrollPosition = window.pageYOffset;
-
-      if (prevScrollPosition > currentScrollPosition) {
-
-        document.querySelector("header").style.top = "5%",
-        document.querySelector("header").style.zIndex = "5";
-       
-        
-
-
-      } else {
-        document.querySelector("header").style.top = "0%",
-        document.querySelector("header").style.zIndex = "7";
-        
-      }
-      prevScrollPosition = currentScrollPosition;
-      }
-  </script>
 
   <div class="modal__backdrop1 is-hidden1" data-modal1>
     <div class="modal1" data-form-modal1>
