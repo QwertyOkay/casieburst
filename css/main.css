@@ -2640,6 +2640,8 @@ a {
   display: list-item;
   text-align: -webkit-match-parent;
   margin-bottom: 30px;
+  padding: 50px 0 0;
+  display: block;
 }
 
 .wrapper__flex {
@@ -2698,11 +2700,16 @@ a {
 }
 
 .wrapper__title {
-  margin: 10px 0 10px;
+  margin: 40px 0 10px;
   font-size: calc(26px + 10 * (100vw - 320px) / 960);
   color: #404044;
   text-transform: capitalize;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .wrapper__title {
+    margin: 90px 0 10px;
+  }
 }
 
 .mr20 {
@@ -2963,8 +2970,9 @@ button {
 }
 
 .wrapper__buttons-sec:hover {
-  background-color: #e22c5f;
+  background-color: #ffda14;
   color: #FFF;
+  border: 2px solid #93d703;
 }
 
 .prod__name {
