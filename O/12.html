@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" media="all" href="./css/main.min.css">
+    <link rel="stylesheet" media="all" href="../css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@ justify-content: center;">
     align-items: center;
     justify-content: center;"><img 
       class="header__logo-img"
-      src="img/logo.png" 
+      src="../img/logo.png" 
       alt="HeaderLogo"></h1>
   </a>
     </div>
@@ -55,31 +55,25 @@ justify-content: center;">
   </header>
   </nav>
 
-<section style="max-width: 1440px;
-margin: 0 auto;padding: 80px 0 50px;">
+<section class="prod__sec">
 <div style="position: relative;
 margin: 0 auto;
 padding: 0 15px;
 max-width: 1730px;">
-<div class="wrap" style="display: flex;
-flex-wrap: wrap;
-gap: 35px;justify-content: center;
-margin-top: 50px;"
->
-
+<div class="prod__wrap">
 
 <div style="width: 500px;">
 
-<img src="img/1.jpg" 
+<img src="../img/O/12.webp" 
 alt="ImageItem" style="width: 100%;">
 </div>
 
 
 <div class="items__info">
     <noindex>
-    <h2 class="prod__name" >Banksy – Choose Your Weapon (Dark purple) </h2>
+    <h2 class="prod__name">Kirby – Cordyline red <br>(90-100 cm)</h2>
     </noindex>
-    <p class="prod__price">€9,000</p>
+    <p class="prod__price">€45.00</p>
 
     <form class="items__form">
     <input class="items__input" type="email" placeholder="Email">
@@ -124,7 +118,7 @@ alt="ImageItem" style="width: 100%;">
       
       <button type="button" class="button__modal1" data-modal-close1> 
           <svg class="icon__close3">
-              <use href="./img/icons.svg#icon-close"></use>
+              <use href="../img/icons.svg#icon-close"></use>
           </svg>
       </button>
 
@@ -149,7 +143,7 @@ alt="ImageItem" style="width: 100%;">
       
       <button type="button" class="button__modal2" data-modal-close2> 
           <svg class="icon__close3">
-              <use href="./img/icons.svg#icon-close"></use>
+              <use href="../img/icons.svg#icon-close"></use>
           </svg>
       </button>
 
@@ -176,7 +170,7 @@ alt="ImageItem" style="width: 100%;">
       
       <button type="button" class="button__modal3" data-modal-close3> 
           <svg class="icon__close3">
-              <use href="./img/icons.svg#icon-close"></use>
+              <use href="../img/icons.svg#icon-close"></use>
           </svg>
       </button>
 
@@ -202,7 +196,7 @@ alt="ImageItem" style="width: 100%;">
       
       <button type="button" class="button__modal4" data-modal-close4> 
           <svg class="icon__close5">
-              <use href="./img/icons.svg#icon-close"></use>
+              <use href="../img/icons.svg#icon-close"></use>
           </svg>
       </button>
 
@@ -223,7 +217,7 @@ alt="ImageItem" style="width: 100%;">
 
       <button type="button" class="button__modal5" data-modal-close5> 
           <svg class="icon__close5">
-              <use href="./img/icons.svg#icon-close"></use>
+              <use href="../img/icons.svg#icon-close"></use>
           </svg>
       </button>
 
@@ -241,7 +235,7 @@ alt="ImageItem" style="width: 100%;">
               id="formName"> 
 
               <svg class="icon__modal-img">
-               <use href="./img/icons.svg#person"></use>  
+               <use href="../img/icons.svg#person"></use>  
               </svg>       
           </label>
   
@@ -253,7 +247,7 @@ alt="ImageItem" style="width: 100%;">
               class="modal__input5 _req _email">
 
               <svg class="icon__modal-img">
-                  <use href="./img/icons.svg#icon-emailblack"></use>  
+                  <use href="../img/icons.svg#icon-emailblack"></use>  
                  </svg>      
               </label>       
   
@@ -282,7 +276,7 @@ alt="ImageItem" style="width: 100%;">
 
 <script>
   let activeAlert = false;
-  const title = "Indoor and Outdoor plants";
+  const title = "Outdoor plants";
   const msg = "Casieburst.com";
   const changeTitle = setInterval(() => {
     document.title = activeAlert ? title : msg;

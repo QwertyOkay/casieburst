@@ -20,7 +20,7 @@
 
 .items__button {
     padding: 15px 20px;
-    background-color: #e22c5f;
+    background-color: #ffe768;
     color: #fff;
     font-weight: 600;
     transition: .3s ease-in-out;
@@ -28,7 +28,12 @@
     border: none;
     font-size: initial;
     transition: .3s ease-in-out;
-    border: none;
+    border: 2px solid #93d703;
+    font-size: x-large;
+}
+
+.items__button:hover {
+    color: #000;
 }
 
 .items__info {
